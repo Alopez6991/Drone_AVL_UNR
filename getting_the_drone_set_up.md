@@ -10,7 +10,7 @@ https://ardupilot.org/dev/docs/ros-install.html
 - ``sudo apt-get install ros-noetic-mavros ros-noetic-mavros-extras``
 - ``wget https://raw.githubusercontent.com/mavlink/mavros/master/mavros/scripts/install_geographiclib_datasets.sh``
 - ``chmod a+x install_geographiclib_datasets.sh``
-- ``./install_geographiclib_datasets.sh``
+- ``sudo ./install_geographiclib_datasets.sh``
 - ``sudo apt-get install ros-noetic-rqt ros-noetic-rqt-common-plugins ros-noetic-rqt-robot-plugins``
 
 https://docs.px4.io/main/en/dev_setup/dev_env_linux_ubuntu.html
