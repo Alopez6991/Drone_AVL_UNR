@@ -48,3 +48,8 @@ https://github.com/Alopez6991/ros_vrpn_client
 - ``git clone https://github.com/Alopez6991/ros_vrpn_client.git``
 - ``cd ../``
 - ``catkin build``
+
+## setting up telemetry
+https://arduino.stackexchange.com/questions/74714/arduino-dev-ttyusb0-permission-denied-even-when-user-added-to-group-dialout-o
+- ``sudo usermod -a -G dialout your-username``
+- ``sudo apt purge modemmanager``
