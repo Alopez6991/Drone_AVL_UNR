@@ -26,7 +26,7 @@ https://industrial-training-master.readthedocs.io/en/melodic/_source/session1/Cr
 - ``catkin init``
 - ``catkin build``
 - ``gedit ~/.bashrc``
-- ``source ~/catkin_ws/devel/setup.bash`
+- ``source ~/catkin_ws/devel/setup.bash``
 	
 **try this when things wont build first**
 * ``catkin clean``
