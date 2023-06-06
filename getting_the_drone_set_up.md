@@ -1,10 +1,15 @@
-Things  Ive done while setting up the drone
+# Nomenclature 
+- The computer that the mocap system is running on will be called `MocapComp`.
+- The onboard computer on the drone will be called `DroneComp`
+- the offboard computer will be called `OffboardComp`
 
+# Set-up
+On the DroneComp and the OffboardComp install the following. This installs ros and all the dependencies that will be needed for runing future code.\
 https://github.com/uf-reef-avl/reef_auto_install
-- ``Clone Repository``
-- ``cd into Repository``
-- ``Run ./autoinstall.sh``
-- ``Follow prompts``
+- Clone Repository
+- cd into Repository
+- Run ``./autoinstall.sh``
+- Follow prompts
 	
 https://ardupilot.org/dev/docs/ros-install.html
 - ``sudo apt-get install ros-noetic-mavros ros-noetic-mavros-extras``
@@ -33,3 +38,13 @@ https://industrial-training-master.readthedocs.io/en/melodic/_source/session1/Cr
 * ``ls``
 * ``catkin build``
 * ``ls``
+
+# Mocap to DroneComp
+go to the below repo and clone it into your catkin workspace.\
+https://github.com/Alopez6991/ros_vrpn_client \
+- ``cd``
+- ``cd catkin_ws/``
+- ``cd src/``
+- ``git clone https://github.com/Alopez6991/ros_vrpn_client.git``
+- ``cd ../``
+- ``catkin build``
