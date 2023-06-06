@@ -41,7 +41,7 @@ https://industrial-training-master.readthedocs.io/en/melodic/_source/session1/Cr
 
 # Mocap to DroneComp
 go to the below repo and clone it into your catkin workspace.\
-https://github.com/Alopez6991/ros_vrpn_client \
+https://github.com/Alopez6991/ros_vrpn_client\
 - ``cd``
 - ``cd catkin_ws/``
 - ``cd src/``
