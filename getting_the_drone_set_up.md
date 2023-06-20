@@ -3,9 +3,10 @@
 - The onboard computer on the drone will be called `DroneComp`
 - the offboard computer will be called `OffboardComp`
 
-# Cable Config
+# Set-up (physical)
+## Cable Config
 
-# Set-up
+# Set-up (Code)
 On the DroneComp and the OffboardComp install the following. This installs ros and all the dependencies that will be needed for runing future code (you can skip thsi step if your system is already sert up).\
 https://github.com/uf-reef-avl/reef_auto_install
 - Clone Repository
@@ -42,6 +43,7 @@ https://industrial-training-master.readthedocs.io/en/melodic/_source/session1/Cr
 * ``catkin build``
 * ``ls``
 
+
 # Mocap to DroneComp
 go to the below repo and clone it into your catkin workspace.on the DroneComp\
 https://github.com/Alopez6991/ros_vrpn_client
@@ -74,4 +76,4 @@ Clone the mocap to mavros package now.
 - ``nano test.launch``
 - edit ``<arg name="name" default="platypus" />`` (line 2) with the name of your object in mocap. e.g. ``<arg name="name" default="flybot" />``
 - edit ``<arg name="fcu_url" default="/dev/ttyUSB0:921600" />`` (line 3) with the dev path to your telem2 cable.
-	- **Note that you need to have the pixhawk connected to the DroneComp via [telem2 and USB](#cable-config) otherwise it wont use MAVROS and MAVLINK**
+	- **Note that you need to have the pixhawk connected to the DroneComp via [telem2 and USB](##cable-config) otherwise it wont use MAVROS and MAVLINK**
