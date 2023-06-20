@@ -70,12 +70,17 @@ To get the proper comunication channels up and running we need to set perameters
 https://github.com/PX4/PX4-user_guide/blob/v1.13/en/ros/external_position_estimation.md
 - click on the Q in the upper left corner
 - Vehicle Setup
-- Perameters
+- Perameters\
 Method 1(recomended):
 - download [parameters](https://github.com/Alopez6991/2023_Drone_AVL_UNR/blob/main/params/REEF_PARAMS.params)
 - tools (top right)
-- upload parameters
-- 
+- upload parameters\
+Method 2 (hand set the parameters yourself)\
+After setting each parameter reatart the drone by going to parameters, tools, restart vehicale
+- MAV_1_CONFIG: 102 (Telem 2)
+- MAV_USEHILGPS: 1 (Enabled)
+- EKF2_HGT_MODE: 3 (Vision)
+- EKF2_AID_MASK: 24 (vision position fusion, vision yaw fusion)
 
 
 
