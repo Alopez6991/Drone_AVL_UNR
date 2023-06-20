@@ -43,6 +43,16 @@ https://industrial-training-master.readthedocs.io/en/melodic/_source/session1/Cr
 * ``catkin build``
 * ``ls``
 
+# QGroundControl
+Set up QGroundControl on the OffboardComp.\
+ https://docs.qgroundcontrol.com/master/en/getting_started/download_and_install.html
+ - Download QGroundControl
+ - ``chmod +x ./QGroundControl.AppImage``
+ - ``./QGroundControl.AppImage``
+**To make launching QGround control easier I recommend you creat an alias in .bashrc**
+- ``cd``
+- ``nano .bashrc``
+- add in something like ``alias QGC=./QGroundControl.AppImage``
 
 # Mocap to DroneComp
 go to the below repo and clone it into your catkin workspace.on the DroneComp\
@@ -77,13 +87,4 @@ Clone the mocap to mavros package now.
 - edit ``<arg name="name" default="platypus" />`` (line 2) with the name of your object in mocap. e.g. ``<arg name="name" default="flybot" />``
 - edit ``<arg name="fcu_url" default="/dev/ttyUSB0:921600" />`` (line 3) with the dev path to your telem2 cable.
 	- **Note that you need to have the pixhawk connected to the DroneComp via [telem2 and USB](#cable-config) otherwise it wont use MAVROS and MAVLINK**
- # QGroundControl
-Set up QGroundControl on the OffboardComp.\
- https://docs.qgroundcontrol.com/master/en/getting_started/download_and_install.html
- - Download QGroundControl
- - ``chmod +x ./QGroundControl.AppImage``
- - ``./QGroundControl.AppImage``
-**To make launching QGround control easier I recommend you creat an alias in .bashrc**
-- ``cd``
-- ``nano .bashrc``
-- add in something like ``alias QGC=./QGroundControl.AppImage``
+
