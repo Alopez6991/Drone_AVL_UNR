@@ -76,4 +76,4 @@ Clone the mocap to mavros package now.
 - ``nano test.launch``
 - edit ``<arg name="name" default="platypus" />`` (line 2) with the name of your object in mocap. e.g. ``<arg name="name" default="flybot" />``
 - edit ``<arg name="fcu_url" default="/dev/ttyUSB0:921600" />`` (line 3) with the dev path to your telem2 cable.
-	- **Note that you need to have the pixhawk connected to the DroneComp via [telem2 and USB](##cable-config) otherwise it wont use MAVROS and MAVLINK**
+	- **Note that you need to have the pixhawk connected to the DroneComp via [telem2 and USB](#cable-config) otherwise it wont use MAVROS and MAVLINK**
