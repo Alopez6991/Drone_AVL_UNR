@@ -44,7 +44,7 @@ https://industrial-training-master.readthedocs.io/en/melodic/_source/session1/Cr
 * ``ls``
 
 # QGroundControl
-Set up QGroundControl on the OffboardComp.\
+Set up QGroundControl on the OffboardComp.
 
 ## Download
  https://docs.qgroundcontrol.com/master/en/getting_started/download_and_install.html
@@ -64,6 +64,17 @@ Set up QGroundControl on the OffboardComp.\
 - Vehicle Setup
 - Firmware
 -
+
+## Uploading Parameters
+To get the proper comunication channels up and running we need to set perameters in QGC.\
+https://github.com/PX4/PX4-user_guide/blob/v1.13/en/ros/external_position_estimation.md
+- click on the Q in the upper left corner
+- Vehicle Setup
+- Perameters
+Method 1(recomended):
+- download [parameters](https://github.com/Alopez6991/2023_Drone_AVL_UNR/blob/main/params/REEF_PARAMS.params)
+- tools (top right)
+- upload parameters
 - 
 
 
