@@ -23,7 +23,8 @@ https://docs.px4.io/main/en/dev_setup/dev_env_linux_ubuntu.html
 - ``bash ./PX4-Autopilot/Tools/setup/ubuntu.sh``
 	
 **Restart computer**
-	
+
+If your DronComp doesnt already have a catkin workspace make one.\
 https://industrial-training-master.readthedocs.io/en/melodic/_source/session1/Create-Catkin-Workspace.html
 - ``cd ~/``
 - ``mkdir --parents catkin_ws/src``
@@ -40,7 +41,7 @@ https://industrial-training-master.readthedocs.io/en/melodic/_source/session1/Cr
 * ``ls``
 
 # Mocap to DroneComp
-go to the below repo and clone it into your catkin workspace.\
+go to the below repo and clone it into your catkin workspace.on the DroneComp\
 https://github.com/Alopez6991/ros_vrpn_client
 - ``cd``
 - ``cd catkin_ws/``
@@ -50,6 +51,12 @@ https://github.com/Alopez6991/ros_vrpn_client
 - ``catkin build``
 
 ## setting up telemetry
+You should have telemetry plugged into telem1 on your pixhawk board. Find its matching transponder and plug it into your OffboardComp. On the OffboardComp run the following.\ 
 https://arduino.stackexchange.com/questions/74714/arduino-dev-ttyusb0-permission-denied-even-when-user-added-to-group-dialout-o
 - ``sudo usermod -a -G dialout your-username``
 - ``sudo apt purge modemmanager``
+# Mocap to Mavros
+- ``cd``
+- ``cd catkin_ws/``
+- ``cd src/``
+- ``git clone ``
