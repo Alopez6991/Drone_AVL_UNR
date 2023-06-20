@@ -4,7 +4,7 @@
 - the offboard computer will be called `OffboardComp`
 
 # Set-up
-On the DroneComp and the OffboardComp install the following. This installs ros and all the dependencies that will be needed for runing future code.\
+On the DroneComp and the OffboardComp install the following. This installs ros and all the dependencies that will be needed for runing future code (you can skip thsi step if your system is already sert up).\
 https://github.com/uf-reef-avl/reef_auto_install
 - Clone Repository
 - cd into Repository
