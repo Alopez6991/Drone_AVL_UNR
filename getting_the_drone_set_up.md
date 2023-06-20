@@ -45,14 +45,28 @@ https://industrial-training-master.readthedocs.io/en/melodic/_source/session1/Cr
 
 # QGroundControl
 Set up QGroundControl on the OffboardComp.\
+
+## Download
  https://docs.qgroundcontrol.com/master/en/getting_started/download_and_install.html
  - Download QGroundControl
  - ``chmod +x ./QGroundControl.AppImage``
- - ``./QGroundControl.AppImage``
+ - ``./QGroundControl.AppImage``\
 **To make launching QGround control easier I recommend you creat an alias in .bashrc**
 - ``cd``
 - ``nano .bashrc``
 - add in something like ``alias QGC=./QGroundControl.AppImage``
+
+## Flashing with px4
+- plug your pixhawk into the your OffboardComp via micro USB to USB
+- launch QGC
+- wait for it to say connected (may take a while)
+- click on the Q in the upper left corner
+- Vehicle Setup
+- Firmware
+-
+- 
+
+
 
 # Mocap to DroneComp
 go to the below repo and clone it into your catkin workspace.on the DroneComp\
