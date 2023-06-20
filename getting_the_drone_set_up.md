@@ -125,4 +125,14 @@ Clone the mocap to mavros package now.
 	- **Note that you need to have the pixhawk connected to the DroneComp via [telem2 and USB](#cable-config) otherwise it wont use MAVROS and MAVLINK**
 
 # Tie it all Together
+- Toss enough mocap dots on your system such that there is no symetry
+- Creat a ridged body in your mocap softwear and give it a unique name
+- Update the launch files to reflect the name of your mocap object
+- Place the drone in the flight space
+- On the DroneComp run: ``roscore``
+- On the DroneComp run: ``roslaunch vrpn_mavros test.launch``
+- ``rostopic echo /mavros/local_position/pose``
+	- check that there is data being published to this topic
+- Move the drone around and make sure the values you see make sense
+- When you are ready to do your [First Flight](https://github.com/Alopez6991/2023_Drone_AVL_UNR/blob/main/First_Flight_Instructions.md) pop over there.
 
