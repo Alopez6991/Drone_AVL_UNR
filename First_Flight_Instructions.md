@@ -39,3 +39,5 @@ Same for right stick on x and y.
 
 Increase the value of the left stick and the robot will take off,
 put it back to the middle right after. Check if it is able to keep its position.
+
+After you are done with your first flight try [Offboard Setpoint Position]()
