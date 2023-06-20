@@ -3,6 +3,8 @@
 - The onboard computer on the drone will be called `DroneComp`
 - the offboard computer will be called `OffboardComp`
 
+# Cable Config
+
 # Set-up
 On the DroneComp and the OffboardComp install the following. This installs ros and all the dependencies that will be needed for runing future code (you can skip thsi step if your system is already sert up).\
 https://github.com/uf-reef-avl/reef_auto_install
@@ -49,6 +51,10 @@ https://github.com/Alopez6991/ros_vrpn_client
 - ``git clone https://github.com/Alopez6991/ros_vrpn_client.git``
 - ``cd ../``
 - ``catkin build``
+- ``roscd ros_vrpn_client``
+- ``cd launch``
+- ``nano test.launch``
+- edit ``<arg name="name" default="magCheck" />`` (line 2) with the name of your object in mocap. e.g. ``<arg name="name" default="flybot" />``
 
 ## setting up telemetry
 You should have telemetry plugged into telem1 on your pixhawk board. Find its matching transponder and plug it into your OffboardComp. On the OffboardComp run the following.\ 
@@ -56,7 +62,16 @@ https://arduino.stackexchange.com/questions/74714/arduino-dev-ttyusb0-permission
 - ``sudo usermod -a -G dialout your-username``
 - ``sudo apt purge modemmanager``
 # Mocap to Mavros
+Clone the mocap to mavros package now. 
 - ``cd``
 - ``cd catkin_ws/``
 - ``cd src/``
-- ``git clone ``
+- ``git clone https://github.com/Alopez6991/vrpn_mavros.git``
+- ``cd ../``
+- ``catkin build``
+- ``roscd vrpn_mavros``
+- ``cd launch``
+- ``nano test.launch``
+- edit ``<arg name="name" default="platypus" />`` (line 2) with the name of your object in mocap. e.g. ``<arg name="name" default="flybot" />``
+- edit ``<arg name="fcu_url" default="/dev/ttyUSB0:921600" />`` (line 3) with the dev path to your telem2 cable.
+	- **Note that you need to have the pixhawk connected to the DroneComp via [telem2 and USB](#cable-config) otherwise it wont use MAVROS and MAVLINK**
