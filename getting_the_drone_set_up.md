@@ -5,6 +5,10 @@
 
 # Set-up (physical)
 ## Cable Config
+#### TELEM1
+Set this up to one end of a radio temelemetry. connet the paired other end of the telemetry to you OffboardComp. 
+#### TELEM2
+you need a cable that goes from TELEM2 to usb on the OffboardComp. This cable is an FTDI Cable. This cable is nescicary for getting any ROS and MAVROS comunications working.
 
 # Set-up (Code)
 On the DroneComp and the OffboardComp install the following. This installs ros and all the dependencies that will be needed for runing future code (you can skip thsi step if your system is already sert up).\
