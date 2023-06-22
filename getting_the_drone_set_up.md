@@ -73,7 +73,11 @@ Set up QGroundControl on the OffboardComp.
 - 
 
 ## Calibrate (Telemetry)
-- 
+- click on the Q in the upper left corner
+- Vehicle Setup
+- Radio
+- Calibrate
+- Follow prompts
 
 ## Uploading Parameters
 To get the proper comunication channels up and running we need to set perameters in QGC.\
