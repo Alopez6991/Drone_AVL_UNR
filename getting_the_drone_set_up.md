@@ -78,7 +78,7 @@ https://github.com/PX4/PX4-user_guide/blob/v1.13/en/ros/external_position_estima
 - Vehicle Setup
 - Perameters\
 **Method 1(recomended):**
-- download [parameters](https://github.com/Alopez6991/2023_Drone_AVL_UNR/blob/main/params/REEF_PARAMS.params)
+- download [parameters](https://github.com/Alopez6991/2023_Drone_AVL_UNR/blob/main/params)
 - tools (top right)
 - upload parameters\
 **Method 2 (hand set the parameters yourself):**\
