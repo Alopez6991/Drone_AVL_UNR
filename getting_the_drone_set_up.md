@@ -4,11 +4,26 @@
 - the offboard computer will be called `OffboardComp`
 
 # Set-up (physical)
+## The flight controller
+we use the [pixhawk Cube Blue](https://irlock.com/products/pixhawk2-1-blue-cube?variant=16025285230643). This cube is D.o.D. compliant. An alternative is the [Cube Orange](https://irlock.com/collections/cubepilot/products/cube-orange-standard-set-imu-v8) which is similar in quality and cheaper but not D.o.D. compliant.
+
+## The Frame
+We use a frame kit for the drone. spesifically we have used the [S500 frame](https://www.amazon.com/Readytosky-Quadcopter-Stretch-Version-Landing/dp/B01N0AX1MZ)
+
+## The motors
+We are using [Tmotors](https://store.tmotor.com/goods-334-MN3110.html)
+## The ESCs
+We are using [30A ESCs](https://www.amazon.com/QWinOut-Brushless-Controller-Multicopter-Quadcopter/dp/B07SFLJJQ5?th=1)
+## The Props
+We are using [11x4.7SFP Props](https://www.apcprop.com/product/11x4-7sfp/)
+ 
 ## Cable Config
+Here is a link to the [pin layout for the Cube Blue mini board](https://docs.cubepilot.org/user-guides/carrier-boards/mini-carrier-board).
+
 #### TELEM1
-Set this up to one end of a radio temelemetry. connet the paired other end of the telemetry to you OffboardComp. 
+Set this up to one end of a radio temelemetry. connet the paired other end of the telemetry to your OffboardComp. 
 #### TELEM2
-you need a cable that goes from TELEM2 to usb on the OffboardComp. This cable is an FTDI Cable. This cable is nescicary for getting any ROS and MAVROS comunications working.
+you need a cable that goes from TELEM2 to usb on the OffboardComp. This cable is an FTDI Cable. This cable is nescisary for getting any ROS and MAVROS comunications working. You will probably need to make this cable. I would start by buying an [FTDI cable](https://www.amazon.com/Ximimark-FT232RL-Serial-Adapter-Arduino/dp/B07T8YHBH1)
 
 # Set-up (Code)
 On the DroneComp and the OffboardComp install the following. This installs ros and all the dependencies that will be needed for runing future code (you can skip thsi step if your system is already sert up).\
