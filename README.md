@@ -11,5 +11,5 @@ After setting up the drone jump to [First flight Instructions](https://github.co
 \
 These instructions are for setting the drone into position mode via the RC controller. and is a good first check that you are propperly using mocap. 
 
-#Second Flight instructions
+# Second Flight instructions
 Affter gettin your first flight in, in positon mode a good next step is sending the offboard position commands. check out [Offboard Setpoint Position Instructions]() 
