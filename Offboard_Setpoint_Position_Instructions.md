@@ -1,9 +1,9 @@
 # The Code
-You can clone my repo for off board into you catkin_ws from [here]()
+You can clone my repo for off board into you catkin_ws from [here](https://github.com/Alopez6991/offboard_py)
 
 * ```cd```
 * ```cd catkin_ws/src```
-* ```git clone _________```
+* ```git clone https://github.com/Alopez6991/offboard_py.git```
 * ```cd ../```
 * ```catkin build```\
 or
