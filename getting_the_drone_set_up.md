@@ -23,7 +23,7 @@ Here is a link to the [pin layout for the Cube Blue mini board](https://docs.cub
 #### TELEM1
 Set this up to one end of a radio temelemetry. connet the paired other end of the telemetry to your OffboardComp. 
 #### TELEM2
-you need a cable that goes from TELEM2 to usb on the OffboardComp. This cable is an FTDI Cable. This cable is nescisary for getting any ROS and MAVROS comunications working. You will probably need to make this cable. I would start by buying an [FTDI cable](https://www.amazon.com/Ximimark-FT232RL-Serial-Adapter-Arduino/dp/B07T8YHBH1)
+you need a cable that goes from TELEM2 to usb on the OffboardComp. This cable is an FTDI Cable. This cable is nescisary for getting any ROS and MAVROS comunications working. You will probably need to make this cable. I would start by buying an [FTDI cable](https://www.amazon.com/Ximimark-FT232RL-Serial-Adapter-Arduino/dp/B07T8YHBH1) **CUT THE POWER CABLE (RED) BEFORE PLUGGING IT IN**
 
 # Set-up (Code)
 On the DroneComp and the OffboardComp install the following. This installs ros and all the dependencies that will be needed for runing future code (you can skip thsi step if your system is already sert up).\
@@ -96,7 +96,8 @@ Set up QGroundControl on the OffboardComp.
 
 ## Uploading Parameters
 To get the proper comunication channels up and running we need to set perameters in QGC.\
-https://github.com/PX4/PX4-user_guide/blob/v1.13/en/ros/external_position_estimation.md
+[v1.13](https://github.com/PX4/PX4-user_guide/blob/v1.13/en/ros/external_position_estimation.md) \
+[v1.14](https://github.com/PX4/PX4-user_guide/blob/v1.14/en/ros/external_position_estimation.md) \
 - click on the Q in the upper left corner
 - Vehicle Setup
 - Perameters\
@@ -104,12 +105,17 @@ https://github.com/PX4/PX4-user_guide/blob/v1.13/en/ros/external_position_estima
 - download [parameters](https://github.com/Alopez6991/2023_Drone_AVL_UNR/blob/main/params/REEF_PARAMS_06_23.params)
 - tools (top right)
 - upload parameters\
-**Method 2 (hand set the parameters yourself):**\
+**Method 2 (v1.13) (hand set the parameters yourself):**\
 After setting each parameter reatart the drone by going to parameters, tools, restart vehicale
 - MAV_1_CONFIG: 102 (Telem 2)
 - MAV_USEHILGPS: 1 (Enabled)
 - EKF2_HGT_MODE: 3 (Vision)
 - EKF2_AID_MASK: 24 (vision position fusion, vision yaw fusion)
+**Method 2 (v1.14) (hand set the parameters yourself):**\
+After setting each parameter reatart the drone by going to parameters, tools, restart vehicale
+- MAV_1_CONFIG: 102 (Telem 2)
+- EKF2_EV_CTRL: 15 (Horizontal position, vertical position, 3D velocity, yaw)
+- EKF2_HGT_REF: Vision
 
 
 
