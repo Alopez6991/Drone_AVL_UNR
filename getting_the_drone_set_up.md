@@ -35,27 +35,16 @@
 | Hot Glue Gun                      | 1        | [Amazon](https://www.amazon.com/dp/B0C2VFZ2XL?th=1)                                                                                                                                                                                                                                                                                                                                                                                                                                                     | $24.99        | General Assembly                                |
 | 1/8" Wooden Dowels                | 1        | [Amazon](https://www.amazon.com/dp/B07ZP41KTY?th=1)                                                                                                                                                                                                                                                                                                                                                                                                                                                     | $8.99         | Motion Capture                                  |
 | Pearl IR Markers                  | 30       | -                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | -             | Motion Capture                                  |
+#### Notes
+
+A cheaper alternative to The Cube Blue flight controller used here is [The Cube Orange](https://irlock.com/products/cube-orange?variant=17907643908147&currency=USD&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&utm_campaign=gs-2018-09-19&utm_source=google&utm_medium=smart_campaign&gad_source=1&gclid=Cj0KCQjwrp-3BhDgARIsAEWJ6SxkUAurjztkKEPH3sd8yNxrrjXkz0NEETTFCJsIXDJiQHnI6eSvJ9EaAus8EALw_wcB). It is similar quality to The Cube Blue but is not D.o.D. compliant  
 ## 3D Printed Parts
 
 | Filename                 | Quantity | Use          |
 | ------------------------ | -------- | ------------ |
 | QuadBatteryMountSide.stl | 2        | Hold battery |
 | QuadBatteryFrontSide.stl | 1        | Hold Battery |
-
-
-
-## The flight controller
-we use the [pixhawk Cube Blue](https://irlock.com/products/pixhawk2-1-blue-cube?variant=16025285230643). This cube is D.o.D. compliant. An alternative is the [Cube Orange](https://irlock.com/collections/cubepilot/products/cube-orange-standard-set-imu-v8) which is similar in quality and cheaper but not D.o.D. compliant.
-
-## The Frame
-We use a frame kit for the drone. spesifically we have used the [S500 frame](https://www.amazon.com/Readytosky-Quadcopter-Stretch-Version-Landing/dp/B01N0AX1MZ)
-
-## The motors
-We are using [Tmotors](https://store.tmotor.com/goods-334-MN3110.html)
-## The ESCs
-We are using [30A ESCs](https://www.amazon.com/QWinOut-Brushless-Controller-Multicopter-Quadcopter/dp/B07SFLJJQ5?th=1)
-## The Props
-We are using [11x4.7SFP Props](https://www.apcprop.com/product/11x4-7sfp/)
+## Tools Required
  
 ## Cable Config
 Here is a link to the [pin layout for the Cube Blue mini board](https://docs.cubepilot.org/user-guides/carrier-boards/mini-carrier-board).
