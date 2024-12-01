@@ -111,11 +111,11 @@ Set up QGroundControl on the OffboardComp.
 - click on the Q in the upper left corner
 - Vehicle Setup
 - Firmware
-- 
+<!-- - --> 
 
-## Calibrate (Pixhawk)
+<!-- ## Calibrate (Pixhawk)
 - 
-
+--> 
 ## Calibrate (Telemetry)
 - click on the Q in the upper left corner
 - Vehicle Setup
