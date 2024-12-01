@@ -1,1 +1,1 @@
-This repo is aquivelent to the vicon bridge used at unr. at the AVL the mocap system used is Optitrack. this repo is used for optitrack. 
+This directory holds the main repos' needed for running the drone. There may be more that you will need to have if you are working beyond the scope of this documentation.
