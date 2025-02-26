@@ -44,9 +44,9 @@ A cheaper alternative to The Cube Blue flight controller used here is [The Cube 
 | ------------------------ | -------- | ------------ |
 | QuadBatteryMountSide.stl | 2        | Hold battery |
 | QuadBatteryFrontSide.stl | 1        | Hold Battery |
-## Tools Required
+<-## Tools Required-!>
  
-## Cable Config
+<-## Cable Config-!>
 Here is a link to the [pin layout for the Cube Blue mini board](https://docs.cubepilot.org/user-guides/carrier-boards/mini-carrier-board).
 
 #### TELEM1
