@@ -124,27 +124,42 @@ Set up QGroundControl on the OffboardComp.
 - Follow prompts
 
 ## Uploading Parameters
-To get the proper comunication channels up and running we need to set perameters in QGC.\
-[v1.13](https://github.com/PX4/PX4-user_guide/blob/v1.13/en/ros/external_position_estimation.md) \
-[v1.14](https://github.com/PX4/PX4-user_guide/blob/v1.14/en/ros/external_position_estimation.md) \
+To get the proper comunication channels up and running we need to set perameters in QGC.
+
 - click on the Q in the upper left corner
 - Vehicle Setup
 - Perameters\
-**Method 1(recomended):**
-- download [parameters](https://github.com/Alopez6991/2023_Drone_AVL_UNR/blob/main/params/REEF_PARAMS_06_23.params)
-- tools (top right)
-- upload parameters\
-**Method 2 (v1.13) (hand set the parameters yourself):**\
+
+**Method 1 [(v1.13)](https://github.com/PX4/PX4-user_guide/blob/v1.13/en/ros/external_position_estimation.md)(hand set the parameters yourself):**
 After setting each parameter reatart the drone by going to parameters, tools, restart vehicale
 - MAV_1_CONFIG: 102 (Telem 2)
 - MAV_USEHILGPS: 1 (Enabled)
 - EKF2_HGT_MODE: 3 (Vision)
 - EKF2_AID_MASK: 24 (vision position fusion, vision yaw fusion)
-**Method 2 (v1.14) (hand set the parameters yourself):**\
+
+**Method 1 [(v1.14)](https://github.com/PX4/PX4-user_guide/blob/v1.14/en/ros/external_position_estimation.md) (hand set the parameters yourself):**
 After setting each parameter reatart the drone by going to parameters, tools, restart vehicale
 - MAV_1_CONFIG: 102 (Telem 2)
 - EKF2_EV_CTRL: 15 (Horizontal position, vertical position, 3D velocity, yaw)
 - EKF2_HGT_REF: Vision
+
+**Method 1 [(v1.15)](https://github.com/PX4/PX4-user_guide/blob/v1.15/en/ros/external_position_estimation.md) (hand set the parameters yourself):**
+After setting each parameter reatart the drone by going to parameters, tools, restart vehicale
+- MAV_1_CONFIG: 102 (Telem 2)
+- EKF2_EV_CTRL: 15 (Horizontal position, vertical position, 3D velocity, yaw)
+- EKF2_HGT_REF: Vision
+
+**Method 2(recomended if you have a param file already and its from a firmware version that matched your current):**
+- download [parameters](https://github.com/Alopez6991/2023_Drone_AVL_UNR/blob/main/params/REEF_PARAMS_06_23.params) **for v1.13 only**
+- tools (top right)
+- upload parameters
+
+**Always good to reboot the cube after changing any parameters**
+- click on the Q in the upper left corner
+- Vehicle Setup
+- Perameters
+- tools
+- reboot
 
 
 
@@ -163,7 +178,8 @@ https://github.com/Alopez6991/ros_vrpn_client
 - edit ``<arg name="name" default="magCheck" />`` (line 2) with the name of your object in mocap. e.g. ``<arg name="name" default="flybot" />``
 
 ## setting up telemetry
-You should have telemetry plugged into telem1 on your pixhawk board. Find its matching transponder and plug it into your OffboardComp. On the OffboardComp run the following.\ 
+You should have telemetry plugged into telem1 on your pixhawk board. Find its matching transponder and plug it into your OffboardComp. On the OffboardComp run the following.
+
 https://arduino.stackexchange.com/questions/74714/arduino-dev-ttyusb0-permission-denied-even-when-user-added-to-group-dialout-o
 - ``sudo usermod -a -G dialout your-username``
 - ``sudo apt purge modemmanager``
